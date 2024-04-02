@@ -16,13 +16,14 @@ window.addEventListener("DOMContentLoaded", () => {
     });
   });
 
-  //Calling all the operator signs
+  //Calling all the operator 
   const calcSigns = document
     .querySelectorAll(".operate")
     .forEach(function (item) {
       item.addEventListener("click", function (e) {
         console.log(e.target.innerHTML.trim());
         
+        // Activating every operation in the application.
         if (e.target.innerHTML === "=") {
           answers.innerText = eval(answers.innerText);
         } else if (e.target.innerHTML === "AC") {
@@ -46,25 +47,4 @@ window.addEventListener("DOMContentLoaded", () => {
         }
       });
     });
-
-  // Activate operations
-  // let lastDigit =  answers.innerText.substring(answers.innerText.length, answers.innerText.length -1);
-
-  // if(!isNaN(lastDigit) &&  e.target.innerHTML === "="){
-  //     answers.innerText = eval(answers.innerText);
-  // }
-  // else if (e.target.innerHTML === "AC"){
-  //     answers.innerText = 0;
-  // }
-  // else if(e.target.innerHTML === "DEl"){
-  //     answers.innerText = answers.innerText.substring(0, answers.innerText.length - 1);
-  //     if (answers.innerText.length == 0 ){
-  //         answers.innerText = 0;
-  //     }
-  // }
-  // else {
-  //     if(!isNaN(lastDigit)){
-  //     answers.innerText += e.target.innerHTML.trim();
-  // }
-  // }
 });
