@@ -1,0 +1,304 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Work+Sans:ital,wght@0,100..900;1,100..900&display=swap');
+
+  body{
+    background-color: rgb(66, 128, 139);
+    /* width: 320px; */
+    width: 100%;
+    font-family: "Poppins", sans-serif;
+
+}
+
+main {
+    background-color: rgb(0, 0, 0);
+    width: 90%;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    padding: 15px;
+}
+/* 
+main div {
+    display: flex;
+} */
+
+.name{
+    border: 2px solid grey !important;
+    color: rgb(245, 245, 245);
+    overflow: hidden;
+}
+
+.name p {
+    color: rgb(0, 128, 0);
+    animation-name: slideffect;
+    animation-duration: 15s;
+    animation-iteration-count: infinite;
+    animation-direction: normal;
+    animation-timing-function: linear;
+    font-weight: bold;
+}
+
+.name h1 {
+    text-align: center;
+}
+
+#answer {
+    /* height: 100px; */
+    border: 2px solid grey !important;
+    color: rgb(209, 158, 29);
+    overflow: hidden;
+    font-size: 40px;
+    text-align: end;
+    contain: content;
+    word-wrap: break-word;
+    padding: 15px;
+    font-weight: 600;
+}
+
+.operators{
+    border:2px solid grey !important ;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 5px;
+}
+
+.operators div {
+    display: flex;
+    align-items: center;
+    align-content: space-between;
+    padding: 5px;
+}
+
+button{
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    border: none;
+    font-size: 20px;
+    margin: 2px 5px 2px 5px;
+    font-weight: 1000;
+}
+
+.key-calc {
+    background-color: rgb(228, 70, 12);
+    color: white;
+}
+
+.key-calc:hover {
+    background-color:rgb(227, 92, 43) ;
+}
+
+.delete-mod-key {
+    background-color: rgb(128, 128, 128);
+}
+
+.delete-mod-key:hover {
+    background-color:rgb(192, 192, 192) ;
+}
+
+.clear-key {
+    background-color: rgb(245, 245, 245);
+    color: black;
+}
+
+.clear-key:hover {
+    background-color:rgb(237, 222, 222) ;
+}
+
+.numbers {
+    background-color:rgb(39, 36, 36);
+    color: white;
+}
+
+.numbers:hover {
+    background-color: rgb(60, 58, 58);
+}
+
+.key-zero {
+    background-color:rgb(39, 36, 36);
+    color: white;
+    width: 130px;
+    height: 60px;
+    border-radius: 30px;
+}
+
+.key-zero:hover {
+    background-color: rgb(60, 58, 58);
+}
+
+@keyframes slideffect{
+    from{
+        margin-left: 100%;
+        width: 500%;
+    }
+
+    to{
+        margin-left: -330%;
+        width: 400%;
+    }
+}
+
+@media screen and (max-width: 230px) {
+    body{
+        background-color: rgb(66, 128, 139);
+         width: 100%; 
+    }
+
+    main {
+        background-color: rgb(0, 0, 0);
+        width: 60%;
+        margin: auto;
+        display: flex;
+        flex-direction: column;
+        padding: 15px;
+        
+    }
+
+    .name h1 {
+        text-align: center;
+        font-size: 15px;
+    }
+
+    #answer {
+        /* min-height: 50px; */
+        border: 2px solid grey !important;
+        color: white;
+        overflow: hidden;
+        font-size: 20px;
+        text-align: end;
+    }
+
+     button{
+        width: 20px;
+        height: 20px;
+        border-radius: 50%;
+        border: none;
+        font-size: 5px;
+        margin: 2px 5px 2px 5px;
+    }
+
+    .key-zero {
+        background-color:rgb(39, 36, 36);
+        color: white;
+        width: 50px;
+        height: 20px;
+        border-radius: 30px;
+    }
+}
+
+@media screen and (min-width: 500px) {
+    body{
+        background-color: rgb(66, 128, 139);
+         width: 100%; 
+    }
+
+    main {
+        background-color: rgb(0, 0, 0);
+        width: 60%;
+        margin: auto;
+        display: flex;
+        flex-direction: column;
+        padding: 15px;
+    }
+}
+
+@media screen and (min-width:1000px ){
+    body{
+        background-color: rgb(66, 128, 139);
+         width: 100%; 
+    }
+    
+    main {
+        background-color: rgb(0, 0, 0);
+        width: 30%;
+        margin: auto;
+        display: flex;
+        flex-direction: column;
+        padding: 15px;
+    }
+    /* 
+    main div {
+        display: flex;
+    } */
+    
+    .name{
+        border: 2px solid grey !important;
+    }
+    
+    h1 {
+        text-align: center;
+        color: whitesmoke;
+    }
+    
+    #answer {
+        /* height: 100px; */
+        border: 2px solid grey !important;
+        color: rgb(209, 158, 29);
+
+    }
+    
+    .operators{
+        border:2px solid grey !important ;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding: 5px;
+    }
+    
+    .operators div {
+        display: flex;
+        align-items: center;
+        align-content: space-between;
+        padding: 5px;
+    }
+    
+    button{
+        width: 70px;
+        height: 70px;
+        border-radius: 50%;
+        margin: 3px 7px 3px 7px;
+        border: none;
+        font-size: 25px;
+    }
+    
+    
+    .key-calc {
+        background-color: rgb(228, 70, 12);
+        color: white;
+    }
+    
+    .delete-mod-key {
+        background-color: grey;
+    }
+    
+    .clear-key {
+        background-color: whitesmoke;
+        color: black;
+    }
+    
+    .numbers {
+        background-color:rgb(39, 36, 36);
+        color: white;
+    }
+    
+    .key-zero {
+        background-color:rgb(39, 36, 36);
+        color: white;
+        width: 155px;
+        height: 60px;
+        border-radius: 30px;
+    }
+
+    @keyframes slideffect{
+        from{
+            margin-left: 100%;
+            width: 500%;
+        }
+    
+        to{
+            margin-left: -300%;
+            width: 300%;
+        }
+    
+}
+}
