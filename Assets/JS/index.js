@@ -5,7 +5,7 @@ window.addEventListener("DOMContentLoaded", () => {
   const number = document.querySelectorAll(".numbers").forEach(function (item) {
     item.addEventListener("click", function (e) {
       if (answers.innerText === "0") {
-        answers.innerText = "";
+        answers.innerText = 0;
       }
 
       if (answers.innerText === "NaN") {
@@ -27,14 +27,14 @@ window.addEventListener("DOMContentLoaded", () => {
         if (e.target.innerHTML === "=") {
           answers.innerText = eval(answers.innerText);
         } else if (e.target.innerHTML === "AC") {
-          answers.innerText = 0;
+          answers.innerText = "";
         } else if (e.target.innerHTML === "DEL") {
           answers.innerText = answers.innerText.substring(
             0,
             answers.innerText.length - 1
           );
           if (answers.innerText.length == 0) {
-            answers.innerText = 0;
+            answers.innerText = "";
           }
         } else {
           let lastDigit = answers.innerText.substring(
